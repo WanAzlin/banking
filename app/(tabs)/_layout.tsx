@@ -47,7 +47,7 @@ export default function TabLayout() {
         name="two"
         options={{
           title: '',
-          tabBarIcon: ({ color }) => <TabBarIcon name="bank" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="plus" color={color} />,
           headerRight: () => (
             <Link href="/frame" asChild>
               <Pressable>
@@ -68,7 +68,7 @@ export default function TabLayout() {
         name="three"
         options={{
           title: '',
-          tabBarIcon: ({ color }) => <TabBarIcon name="book" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="bank" color={color} />,
           headerRight: () => (
             <Link href="/frame" asChild>
               <Pressable>

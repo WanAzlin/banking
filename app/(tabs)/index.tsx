@@ -10,14 +10,7 @@ export default function TabOneScreen() {
       <Image style={styles.circle}
       source={require("../../assets/images/av2.png")} /> 
       <Text style={styles.title2}>Wan Azlin</Text>
-      <Link href="/frame" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                   <Image style={styles.circle3}
-                   source={require("../../assets/images/plus.png")} /> 
-                )}
-              </Pressable>
- </Link>
+     
       </View>
       <Text style={styles.title}>Total Savings</Text>
       <View style ={{flexDirection: "row"}}> 
@@ -131,8 +124,8 @@ const styles = StyleSheet.create({
 
   },
   circle2: {
-    width: 30,
-    height: 30,
+    width: 33,
+    height: 33,
     borderRadius: 80,
     marginLeft: 130,
 
@@ -234,19 +227,19 @@ const styles = StyleSheet.create({
   },
   text1: {
     
-    marginTop: 10,
+    marginBottom: 8,
     fontSize:10,
     
   },
   container1: {
     margin: 5,
     borderRadius: 10,
-    borderColor:'#42A5F5',
+    borderColor:'#FFFFFF',
     borderWidth: 2,
     backgroundColor: '#1876D1',
     marginTop: 10,
-    paddingVertical: 5,
-    paddingHorizontal: 5,
+    paddingVertical: 3,
+    paddingHorizontal: 3,
   },
   
 });
