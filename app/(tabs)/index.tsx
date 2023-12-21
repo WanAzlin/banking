@@ -46,7 +46,10 @@ export default function TabOneScreen() {
       source={require("../../assets/images/party.png")} /> 
       <Text style={styles.paratext1}>Party Savings</Text> 
       <Text style={styles.text1}>Happy New Year Party </Text> 
-      <View style={styles.container1}>     
+      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      <View style ={{flexDirection: "row", backgroundColor: "#434343"}}> 
+      <Image style={styles.circle4}
+      source={require("../../assets/images/plus.png")} /> 
       <Link href="/frame" asChild>
               <Pressable>
                 {({ pressed }) => (
@@ -54,14 +57,18 @@ export default function TabOneScreen() {
                 )}
               </Pressable>
  </Link>
- </View>
+      </View>
+     
       </View>
       <View style={styles.box1}>
       <Image style={styles.icon}
       source={require("../../assets/images/goodbye.png")} /> 
       <Text style={styles.paratext1}>Farewell Savings</Text> 
       <Text style={styles.text1}>Bye Bye Sarah </Text> 
-      <View style={styles.container1}>     
+      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      <View style ={{flexDirection: "row", backgroundColor: "#434343"}}> 
+      <Image style={styles.circle4}
+      source={require("../../assets/images/plus.png")} /> 
       <Link href="/frame" asChild>
               <Pressable>
                 {({ pressed }) => (
@@ -69,7 +76,7 @@ export default function TabOneScreen() {
                 )}
               </Pressable>
  </Link>
- </View>
+      </View>
       </View>
       </View>
       <View style ={{flexDirection: "row"}}>
@@ -78,7 +85,10 @@ export default function TabOneScreen() {
       source={require("../../assets/images/goal-2.png")} /> 
       <Text style={styles.paratext1}>Purchase Target</Text> 
       <Text style={styles.text1}>Buy New Macbook </Text> 
-      <View style={styles.container1}>     
+      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      <View style ={{flexDirection: "row", backgroundColor: "#434343"}}> 
+      <Image style={styles.circle4}
+      source={require("../../assets/images/plus.png")} /> 
       <Link href="/frame" asChild>
               <Pressable>
                 {({ pressed }) => (
@@ -86,14 +96,17 @@ export default function TabOneScreen() {
                 )}
               </Pressable>
  </Link>
- </View>
+      </View>
       </View>
       <View style={styles.box1}>
       <Image style={styles.icon}
       source={require("../../assets/images/congratulation.png")} /> 
       <Text style={styles.paratext1}>College Fund</Text> 
       <Text style={styles.text1}>Failed semester </Text> 
-      <View style={styles.container1}>     
+      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      <View style ={{flexDirection: "row", backgroundColor: "#434343"}}> 
+      <Image style={styles.circle4}
+      source={require("../../assets/images/plus.png")} /> 
       <Link href="/frame" asChild>
               <Pressable>
                 {({ pressed }) => (
@@ -101,7 +114,7 @@ export default function TabOneScreen() {
                 )}
               </Pressable>
  </Link>
- </View>
+      </View>
       </View>
       </View>
     </View>
@@ -137,6 +150,13 @@ const styles = StyleSheet.create({
    
 
   },
+  circle4: {
+    width: 30,
+    height: 30,
+    paddingBottom: 15,
+   
+
+  },
   circle3: {
     width: 40,
     height: 40,
@@ -168,23 +188,23 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginLeft: 5,
    
-    marginBottom: 5,
+    paddingTop: 3,
   },
   tSaving: {
     fontSize: 40,
     fontWeight: 'bold',
     marginLeft: 25,
-    paddingTop: 20,
+    paddingTop: 5,
   },
   cSaving: {
     fontSize: 15,
     marginLeft: 25,
-    paddingTop: 35,
+    paddingTop: 20,
     color: '#837F7F',
     fontWeight: 'bold',
   },
   box1: {
-    marginLeft: 20,
+    marginLeft: 15,
     marginRight: 3,
     borderColor:'#000000',
     backgroundColor: "#434343",
@@ -211,7 +231,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     paddingVertical: 15,
     paddingHorizontal: 20,
-    marginTop: 20,
+    marginTop: 15,
   },
   paratext1: {
     fontWeight: 'bold',
@@ -241,5 +261,10 @@ const styles = StyleSheet.create({
     paddingVertical: 3,
     paddingHorizontal: 3,
   },
-  
+  separator: {
+    marginVertical: 30,
+    height: 1,
+    width: '100%',
+    marginTop: 10,
+  },
 });
