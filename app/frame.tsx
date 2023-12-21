@@ -121,10 +121,10 @@ resetValue3= () => {
     </View>
     </View> 
     <View style={styles.topbutton}>
-      <Button  color="#FFFFFF" onPress={this.resetValue2} title="Reset"/>
+      <Button  color="#FFFFFF" onPress={this.resetValue2} title="Continue"/>
     </View>
     <View >
-      <Button  color="#FFFFFF" onPress={this.resetValue2} title="Continue"/>
+      <Button  color="#FFFFFF" onPress={this.resetValue2} title="Reset"/>
     </View>
 
    </View>      

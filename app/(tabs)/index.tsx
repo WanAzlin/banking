@@ -19,9 +19,9 @@ export default function TabOneScreen() {
       </View>
       <View style={styles.box2}>
       <View style ={{flexDirection: "row", backgroundColor: "#434343" }}> 
-      <Text style={styles.paratext2}>Collaborated Savings</Text>  
+      <Text style={styles.paratext2}>Co-Savings</Text>  
       
-      <Link href="/frame" asChild>
+      <Link href="/one" asChild>
               <Pressable>
                 {({ pressed }) => (
                    <Image style={styles.circle2}
@@ -49,7 +49,7 @@ export default function TabOneScreen() {
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <View style ={{flexDirection: "row", backgroundColor: "#434343"}}> 
       <Image style={styles.circle4}
-      source={require("../../assets/images/plus.png")} /> 
+      source={require("../../assets/images/add-3.png")} /> 
       <Link href="/frame" asChild>
               <Pressable>
                 {({ pressed }) => (
@@ -68,7 +68,7 @@ export default function TabOneScreen() {
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <View style ={{flexDirection: "row", backgroundColor: "#434343"}}> 
       <Image style={styles.circle4}
-      source={require("../../assets/images/plus.png")} /> 
+      source={require("../../assets/images/add-3.png")} /> 
       <Link href="/frame" asChild>
               <Pressable>
                 {({ pressed }) => (
@@ -88,7 +88,7 @@ export default function TabOneScreen() {
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <View style ={{flexDirection: "row", backgroundColor: "#434343"}}> 
       <Image style={styles.circle4}
-      source={require("../../assets/images/plus.png")} /> 
+      source={require("../../assets/images/add-3.png")} /> 
       <Link href="/frame" asChild>
               <Pressable>
                 {({ pressed }) => (
@@ -106,7 +106,7 @@ export default function TabOneScreen() {
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <View style ={{flexDirection: "row", backgroundColor: "#434343"}}> 
       <Image style={styles.circle4}
-      source={require("../../assets/images/plus.png")} /> 
+      source={require("../../assets/images/add-3.png")} /> 
       <Link href="/frame" asChild>
               <Pressable>
                 {({ pressed }) => (
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
     width: 33,
     height: 33,
     borderRadius: 80,
-    marginLeft: 130,
+    marginLeft: 220,
 
   },
   circle1: {

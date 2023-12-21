@@ -1,20 +1,32 @@
 import { StatusBar } from 'expo-status-bar';
-import { Platform, StyleSheet ,Image} from 'react-native';
+import { Platform, StyleSheet ,Image, Pressable} from 'react-native';
 import { Text, View } from '../components/Themed';
+import { Link,  } from 'expo-router';
 
 export default function ModalScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Set Saving</Text>
-      <View style={styles.box2}>
-      <View style ={{flexDirection: "row",backgroundColor: "#434343", }}>
-      <Image style={styles.icon}
-      source={require("../assets/images/party.png")} /> 
-      <Text style={styles.title2}>Party Savings</Text>
-      
+      <View style ={{flexDirection: "row",}}>
+        
+        <Text style={styles.title}>Cancel</Text>
+        <Text style={styles.title2}>Add Invitees</Text>
+        <Link href="/two2" asChild>
+              <Pressable>
+                {({ pressed }) => (
+                    <Text style={styles.title3}>Done</Text>
+                )}
+              </Pressable>
+ </Link>
+
+       
       </View>
-      
+      <View style ={{flexDirection: "row",}}>
+        <Text style={styles.title}>To:</Text>
+        <Image style={styles.circle2}
+                   source={require("../assets/images/add-3.png")} /> 
       </View>
+      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      
 
       
     </View>
@@ -30,37 +42,38 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     color: "#ECF0F1",
-    marginLeft: 25,
+    marginLeft: 20,
     paddingTop:30,
    
   },
-  
-  box2: {
-    marginLeft: 20,
-    marginRight: 3,
-    borderColor:'#000000',
-    backgroundColor: "#434343",
-    shadowColor: "black",
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.4,
-    shadowRadius: 6,
-    elevation: 5,
-    borderRadius: 15,
-    paddingVertical: 5,
-    paddingHorizontal: 20,
-    marginTop: 8,
-  },
-  
   title2: {
-    fontSize: 20,
-    marginTop: 10,
-    marginLeft: 15,
-    
+    fontSize: 18,
+    color: "#ECF0F1",
+    marginLeft: 90,
+    paddingTop:30,
+   
   },
-  icon: {
-    width: 40,
-    height: 40, 
-    marginLeft: 5,
-    marginBottom: 10,
+  title3: {
+    fontSize: 18,
+    color: "#ECF0F1",
+    marginLeft: 80,
+    paddingTop:30,
+   
   },
+  circle2: {
+    width: 33,
+    height: 33,
+    marginTop: 20,
+    marginLeft: 310,
+
+  },
+  separator: {
+    marginVertical: 30,
+    height: 1,
+    width: '100%',
+    marginTop: 20,
+  },
+  
+
+ 
 });
