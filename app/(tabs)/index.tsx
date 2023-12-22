@@ -32,8 +32,15 @@ export default function TabOneScreen() {
 
       </View>
       <View style ={{flexDirection: "row", backgroundColor: "#434343", paddingTop: 8 }}> 
-      <Image style={styles.circle1}
-      source={require("../../assets/images/av1.png")} /> 
+      <Link href="/modal" asChild>
+              <Pressable>
+                {({ pressed }) => (
+                    <Image style={styles.circle1}
+                    source={require("../../assets/images/av1.png")} /> 
+                )}
+              </Pressable>
+    </Link>
+     
       <Image style={styles.circle1}
       source={require("../../assets/images/av2.png")} /> 
       <Image style={styles.circle1}

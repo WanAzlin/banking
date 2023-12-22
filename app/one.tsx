@@ -7,16 +7,9 @@ export default function ModalScreen() {
   return (
     <View style={styles.container}>
       <View style ={{flexDirection: "row",}}>
-        
         <Text style={styles.title}>Cancel</Text>
         <Text style={styles.title2}>Add Invitees</Text>
-        <Link href="/two2" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                    <Text style={styles.title3}>Done</Text>
-                )}
-              </Pressable>
- </Link>
+        <Text style={styles.title3}>Done</Text>
 
        
       </View>
@@ -61,8 +54,8 @@ const styles = StyleSheet.create({
    
   },
   circle2: {
-    width: 33,
-    height: 33,
+    width: 40,
+    height: 40,
     marginTop: 20,
     marginLeft: 310,
 

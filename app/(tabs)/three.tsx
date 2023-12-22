@@ -28,8 +28,14 @@ export default function ModalScreen() {
      <Text style={styles.title5}>Dream vacation to Bali</Text>   
      <Text style={styles.title6}>Lorem ipsum</Text>         
      </View>
-     <Image style={styles.circle3}
-                   source={require("../../assets/images/next.png")} /> 
+     <Link href="/sDetail" asChild>
+              <Pressable>
+                {({ pressed }) => (
+                  <Image style={styles.circle3}
+                  source={require("../../assets/images/next.png")} />
+                )}
+              </Pressable>
+      </Link> 
       </View>
       <View style ={{flexDirection: "row" }}>
       <Image style={styles.circle21}
@@ -141,7 +147,7 @@ const styles = StyleSheet.create({
     width: 35,
     height: 35,
     paddingTop: 25,
-    marginLeft: 55,
+    marginLeft: 60,
 
   },
 });
